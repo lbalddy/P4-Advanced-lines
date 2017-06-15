@@ -1,17 +1,13 @@
 ##**Advanced Lane Finding Project**
 
 ## CHANGES AFTER SUBMISSION
-###Three main points were made during submission
+###Two main points were made during submission
 
 1.- Distance represented in the video wasn't taken from the center. This has been updated. Has been updated and can be seen in the video. 
 2.- Radius were too big to be "real". Pixels per meter wasn't taken in account in calculate radius original function. Has been updated and can be seen in the video.
 3.- There were some points in the video where we lost the lanes. This has been updated, smoothness of the curve has been changed ( 10 frames are smoothed together) and method for calculating polyfit has been improved in those frames were we lost control, now we use old frame in case we don't have points well distributed to calculate polyfit. i.e If we have points concentrated in one height of the image, we cannot rely on polyfit, so we'll use last frame. Now, video is a bit better in terms of stability. 
 
-VIDEO CAN BE SEEN HERE!!! -> https://youtu.be/4cipadvllwQ
-
-
-
-
+VIDEO CAN BE SEEN HERE!!! ->  
 _______________________________________________________________
 ORIGINAL WRITE UP BELOW THIS POINT
 
